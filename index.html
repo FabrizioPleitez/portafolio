@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabrizio Díaz | Desarrollador Web Frontend</title>
+    <meta name="description" content="Portafolio profesional de Fabrizio Díaz, desarrollador web especializado en crear interfaces modernas, accesibles y de alto rendimiento." />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Encabezado / Barra de Navegación -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#inicio" class="brand">
+          <span class="brand-badge">FD</span>
+          <span class="brand-name">Fabrizio Díaz</span>
+        </a>
+
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+            <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema de color" title="Cambiar tema">
+            <span class="icon-moon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+            <span class="icon-sun" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </span>
+          </button>
+
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir menú de navegación" aria-expanded="false">
+            <svg class="menu-open-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg class="menu-close-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="inicio" class="hero-section">
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="status-dot"></span>
+            <span>Disponible para nuevos proyectos</span>
+          </div>
+
+          <h1 class="hero-title">
+            Desarrollo web enfocado en <span class="text-gradient">experiencias modernas</span> y código limpio
+          </h1>
+
+          <p class="hero-description">
+            Hola, soy Fabrizio Díaz. Desarrollador frontend con pasión por construir interfaces interactivas, accesibles, de alto rendimiento y diseño intuitivo.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#proyectos" class="btn btn-primary">
+              <span>Explorar Proyectos</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contacto" class="btn btn-secondary">
+              <span>Iniciar Contacto</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">Frontend</span>
+              <span class="stat-label">Especialidad Principal</span>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <span class="stat-number">React & JS</span>
+              <span class="stat-label">Stack Tecnológico</span>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Diseño Responsivo</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre Mí Section -->
+      <section id="sobre-mi" class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Conóceme</span>
+          <h2 class="section-title">Sobre mí</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card">
+            <h3>Construyendo con dedicación y enfoque continuo</h3>
+            <p>
+              Soy un desarrollador web en constante crecimiento profesional, con sólidos fundamentos en el desarrollo frontend moderno. Mi objetivo es traducir necesidades y diseños en código limpio, escalable y mantenible.
+            </p>
+            <p>
+              Me gusta prestar atención a los detalles: desde la arquitectura del código y la semántica accesible hasta animaciones sutiles que aportan fluidez y una experiencia de usuario agradable.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-bullet"></span>
+                <span>Enfoque en rendimiento y carga rápida</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-bullet"></span>
+                <span>Diseño responsivo para móviles, tablets y escritorio</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-bullet"></span>
+                <span>Buenas prácticas de accesibilidad y SEO técnico</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards-col">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="feature-info">
+                <h4>Desarrollo Frontend</h4>
+                <p>Creación de interfaces de usuario modernas utilizando JavaScript moderno, React, HTML5 y estilos avanzados.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+              <div class="feature-info">
+                <h4>Código Limpio & Modular</h4>
+                <p>Estructuración ordenada de componentes y hojas de estilo optimizadas mediante preprocesadores como LESS.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="feature-info">
+                <h4>Aprendizaje Constante</h4>
+                <p>Explorando continuamente nuevas herramientas del ecosistema web para entregar soluciones actualizadas y eficientes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Habilidades Section -->
+      <section id="habilidades" class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Tecnologías</span>
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 3h16l-1.5 17-6.5 2-6.5-2L4 3z"></path>
+                  <path d="M7 7h10"></path>
+                  <path d="M7 11h9.5"></path>
+                  <path d="M7.5 15h7l-.5 4-2 .5-2-.5-.2-2"></path>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>HTML5</h3>
+                <span class="skill-level">Semántica & Accesibilidad</span>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%" data-progress="90%"></div>
+            </div>
+            <div class="skill-footer">
+              <span class="skill-percent">90%</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>CSS3 / LESS</h3>
+                <span class="skill-level">Flexbox, Grid & Animaciones</span>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%" data-progress="85%"></div>
+            </div>
+            <div class="skill-footer">
+              <span class="skill-percent">85%</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="9" y1="9" x2="9" y2="15"></line>
+                  <line x1="15" y1="9" x2="15" y2="15"></line>
+                  <path d="M9 15c0 1.5 1 2 2 2"></path>
+                  <path d="M15 15c0 1.5-1 2-2 2"></path>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>JavaScript</h3>
+                <span class="skill-level">ES6+, DOM & APIs</span>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%" data-progress="80%"></div>
+            </div>
+            <div class="skill-footer">
+              <span class="skill-percent">80%</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)"></ellipse>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90 12 12)"></ellipse>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)"></ellipse>
+                  <circle cx="12" cy="12" r="1.5"></circle>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>React</h3>
+                <span class="skill-level">Componentes & Hooks</span>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%" data-progress="75%"></div>
+            </div>
+            <div class="skill-footer">
+              <span class="skill-percent">75%</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <circle cx="18" cy="6" r="3"></circle>
+                  <path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path>
+                  <path d="M12 12v3"></path>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>Git & Control de Versiones</h3>
+                <span class="skill-level">Ramas, Commits & GitHub</span>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%" data-progress="80%"></div>
+            </div>
+            <div class="skill-footer">
+              <span class="skill-percent">80%</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <div class="skill-title-group">
+                <h3>Vite & Entorno Moderno</h3>
+                <span class="skill-level">Bundling & Optimización</span>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%" data-progress="75%"></div>
+            </div>
+            <div class="skill-footer">
+              <span class="skill-percent">75%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos Section -->
+      <section id="proyectos" class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Portafolio</span>
+          <h2 class="section-title">Proyectos Destacados</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Proyecto 1 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+              </div>
+              <div class="project-badges">
+                <span class="badge-featured">Destacado</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Plataforma E-Commerce</h3>
+              <p class="project-description">
+                Tienda web moderna con catálogo de productos interactivo, carrito de compras persistente con LocalStorage, filtros dinámicos y proceso de compra simulado.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">Responsive</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/FabrizioPleitez" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Código</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="#proyectos" class="project-link project-link-primary">
+                <span>Demo en Vivo</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <div class="project-badges">
+                <span class="badge-featured">Analítica</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Panel de Métricas & Analíticas</h3>
+              <p class="project-description">
+                Dashboard administrativo con visualización gráfica interactiva, consumo de APIs REST, filtrado temporal de estadísticas y alternancia instantánea de modo oscuro.
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">REST API</span>
+                <span class="tag">Vite</span>
+                <span class="tag">Chart UI</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/FabrizioPleitez" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Código</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="#proyectos" class="project-link project-link-primary">
+                <span>Demo en Vivo</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div class="project-badges">
+                <span class="badge-featured">Productividad</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Gestor de Tareas & Flujos</h3>
+              <p class="project-description">
+                Herramienta SPA estilo tablero de productividad con creación de columnas, arrastre dinámico, categorización por prioridades y almacenamiento persistente.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">LESS</span>
+                <span class="tag">ES6 Modules</span>
+                <span class="tag">UI/UX</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/FabrizioPleitez" target="_blank" rel="noopener noreferrer" class="project-link">
+                <span>Código</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="#proyectos" class="project-link project-link-primary">
+                <span>Demo en Vivo</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contacto Section -->
+      <section id="contacto" class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Conectemos</span>
+          <h2 class="section-title">Contacto</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-info-panel">
+            <h3>Hablemos de tu próximo proyecto</h3>
+            <p>
+              ¿Tienes una propuesta, pregunta o simplemente quieres saludar? Llena el formulario o comunícate a través de mis canales directos.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">Correo Electrónico</span>
+                  <a href="mailto:fabriziopleitez@gmail.com" class="contact-val">fabriziopleitez@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">Ubicación</span>
+                  <span class="contact-val">Disponible para trabajo remoto / presencial</span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com/FabrizioPleitez" target="_blank" rel="noopener noreferrer" class="contact-val">github.com/FabrizioPleitez</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject" placeholder="Motivo de tu mensaje" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe aquí tu consulta o propuesta..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Enviar Mensaje</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Notificación Toast Elegante -->
+    <div id="toast" class="toast-notification" role="alert" aria-live="polite">
+      <div class="toast-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="toast-text">
+        <strong id="toast-title">Mensaje enviado</strong>
+        <span id="toast-message">Gracias por comunicarte. Responderé a la brevedad.</span>
+      </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="brand">
+            <span class="brand-badge">FD</span>
+            <span class="brand-name">Fabrizio Díaz</span>
+          </div>
+          <p>Desarrollo web enfocado en diseño moderno, código limpio y rendimiento óptimo.</p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Conéctate</h4>
+          <div class="social-links">
+            <a href="https://github.com/FabrizioPleitez" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="mailto:fabriziopleitez@gmail.com" aria-label="Enviar correo directo">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fabrizio Díaz. Todos los derechos reservados.</p>
+        <a href="#inicio" class="back-to-top" aria-label="Volver arriba">
+          <span>Subir</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
